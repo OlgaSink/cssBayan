@@ -1,1 +1,1 @@
-https://${OlgaSink}.github.io/cssBayan/cssBayan/index.html
+https://olgasink.github.io/cssBayan/cssBayan/

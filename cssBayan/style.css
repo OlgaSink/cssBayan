@@ -1,0 +1,89 @@
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1080px;
+    font-family: 'Inika';;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 50px;
+    background-color: #f5eded;
+}
+
+.wrapper {
+    max-width: 1920px;
+    padding: 0 20px;
+}
+
+.wrapper .accordion {
+    margin: 20px auto;
+}
+
+.wrapper .accordion__item .accordion-title {
+    background: #007bff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+}
+
+.wrapper .accordion__item .accordion-input:checked ~ .accordion-title {
+    background-color: #f700ff;
+}
+
+.wrapper .accordion__item .accordion-input:checked ~ .accordion-img {
+    max-height: 100vh;
+}
+
+.wrapper .accordion-title:hover {
+    background-color: #f700ff;
+}
+
+.wrapper .accordion-title span {
+    color: #fff;
+    text-shadow: 0 -1px 1px #0056b3;
+}
+
+.wrapper .accordion-title .dropdown-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-image: url(assets/accordion_btn.svg);
+    display: block;
+}
+
+.wrapper .accordion__item .accordion-input:checked ~ .accordion-title .dropdown-icon {
+    background-image: url(assets/accordion_btn_up.svg);
+}
+
+.wrapper .accordion__item .accordion-img {
+    max-height: 0px;
+    overflow: hidden;
+    padding: 5px 20px;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper input {
+    display: none;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 4rem;
+}
+
+
+
